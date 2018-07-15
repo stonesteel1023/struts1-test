@@ -8,8 +8,8 @@
       <property name="JDBC.Driver" value="oracle.jdbc.driver.OracleDriver"/>
       <property name="JDBC.ConnectionURL" 
 value="jdbc:oracle:thin:@127.0.0.1:1521:oracle"/>
-      <property name="JDBC.Username" value="c##stonesteel"/>
-      <property name="JDBC.Password" value="stonesteel"/>
+      <property name="JDBC.Username" value="c##scott"/>
+      <property name="JDBC.Password" value="tiger"/>
     </dataSource>
   </transactionManager>
 
