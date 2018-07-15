@@ -20,7 +20,7 @@
   
   <select id="BoardList" parameterClass="java.util.Map" resultMap="BoardResult">
   select seq, writer, title, content, pwd, hit, groups, step, 
-  level, bname, regdate from bboard  
+  levels, bname, regdate from bboard  
   <dynamic prepend="where">  
     <isNotEmpty prepend="AND" property="bname">
       bname = #bname#
@@ -63,10 +63,10 @@
   <insert id="BoardInsert" parameterClass="Board">
     insert into bboard (
     seq, writer, title, content, pwd, hit,
-    groups, step, level, bname, regdate )
+    groups, step, levels, bname, regdate )
     values (
      #seq#, #writer#, #title#, #content#, #pwd#, 0,
-     #groups#, #step#, #level#, #bname#, now()
+     #groups#, #step#, #levels#, #bname#, now()
     )
   </insert>
   

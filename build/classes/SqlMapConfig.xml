@@ -5,11 +5,11 @@
 <sqlMapConfig>
   <transactionManager type="JDBC" commitRequired="false">
     <dataSource type="SIMPLE">
-      <property name="JDBC.Driver" value="com.mysql.jdbc.Driver"/>
+      <property name="JDBC.Driver" value="oracle.jdbc.driver.OracleDriver"/>
       <property name="JDBC.ConnectionURL" 
-value="jdbc:mysql://127.0.0.1:3306/chap12?useUnicode=true&amp;characterEncoding=euckr"/>
-      <property name="JDBC.Username" value="scott"/>
-      <property name="JDBC.Password" value="tiger"/>
+value="jdbc:oracle:thin:@127.0.0.1:1521:oracle"/>
+      <property name="JDBC.Username" value="c##stonesteel"/>
+      <property name="JDBC.Password" value="stonesteel"/>
     </dataSource>
   </transactionManager>
 
